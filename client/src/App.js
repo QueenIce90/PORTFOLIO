@@ -303,7 +303,7 @@ function App() {
   <a href="https://www.facebook.com/queenice90" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook"></i></a>
 </div>
 <div>
-  <a href="/seresume1.pdf" download className="btn btn2">
+  <a href="/seresume4.pdf" download className="btn btn2">
   Download CV
 </a>
 </div>
