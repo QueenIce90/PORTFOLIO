@@ -1,6 +1,6 @@
-![Isamar Official Website](client/public/IsamarOfficialPortfolio.gif)
 
 # Isamar Banos - Full Stack Developer Portfolio
+![Isamar Official Website](client/public/IsamarOfficialPortfolio.gif)
 
 Welcome to my portfolio! I'm Isamar Banos, a passionate and dedicated Full Stack Developer based in New York City. This portfolio showcases my skills, projects, and experience. Feel free to explore and connect with me.
 
