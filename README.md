@@ -59,3 +59,4 @@ Explore these projects on GitHub for more details.
 - **GitHub:** [QueenIce90](https://github.com/QueenIce90)
 [Download CV](/seresume1.pdf)
 Feel free to reach out to me! Let's create something amazing together. 🚀
+# Portfolio
