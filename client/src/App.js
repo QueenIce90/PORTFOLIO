@@ -24,7 +24,6 @@ function App() {
     form.addEventListener('submit', handleSubmit);
 
     return () => {
-      // Cleanup: remove the event listener when the component unmounts
       form.removeEventListener('submit', handleSubmit);
     };
   }, [scriptURL]);
@@ -60,13 +59,14 @@ function App() {
       <div id='header'>
         <div className='container'>
           <nav className='navbar'>
-            <img src="/logo1.png" className='logo' alt='logo' />
+            <img src="isamarlogo232.png" className='logo' alt='logo' />
             <ul id='sidemenu'>
-            <li><a href='#header'>Home</a></li>
+            <li><a href='#home'>Home</a></li>
               <li><a href='#about'>About</a></li>
               <li><a href='#services'>Services</a></li>
               <li><a href='#projects'>Projects</a></li>
               <li><a href='#contact'>Contact</a></li>
+              
               <i class="fas fa-times" onClick={() => closemenu()}></i>
             </ul>
             <i class="fa-solid fa-bars" onClick={() => openmenu()} style={{color: 'white'}}></i>
@@ -74,7 +74,7 @@ function App() {
           <div className='header-text'>
             <p>Hi There, I'm</p>
             <h1>Isamar Banos</h1>
-            <p>Full Stack Developer</p>
+            <p className='title'>Full Stack Developer</p>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ function App() {
         <div className='container'>
           <div className='row'>
             <div className='about-col-1'>
-              <img className='logo-pic' src='logo121.png' alt='Isamar Logo' />
+              <img className='logo-pic' src='5.png' alt='Isamar Logo' />
             </div>
             <div className='about-col-2'>
               <h1 className='sub-title'> About Me</h1>
@@ -111,7 +111,7 @@ function App() {
             <div className='tab-contents' id='experience'>
               <ul>
                 <li><span>Flatiron School Bootcamp (2023-2024)</span><br/> Completed full-stack bootcamp, proficient in React, Ruby on Rails, and JavaScript. <br/>Deployed multiple web applications.</li>
-                <li><span>Nature's Love Touch - E-Commerce Platform (2019-2024)</span><br/>Led secure e-commerce platform development</li>
+                <li><span>Nature's Love Touch - E-Commerce Platform (2019-2024)</span><br/>Led secure e-commerce platform development at www.natureslovetouch.com</li>
                 <li><span>Flatiron School Alumni Network (Ongoing)</span><br/>Actively engaged in alumni community.</li>
             
               </ul>
@@ -138,7 +138,7 @@ function App() {
         <h2 className='service-title'>Software Development</h2>
         <p className='service-desc'>Designing, coding, testing, and <br/> maintaining software applications.</p>
         <p>Developing custom solutions  <br/> tailored to the specific requirements of clients or projects.</p>
-        <a href="#software-development">Learn more</a>
+        {/* <a href="#software-development">Learn more</a> */}
       </div>
 
       <div className="service-item">
@@ -146,7 +146,7 @@ function App() {
         <h2 className='service-title'>Web Development</h2>
         <p className='service-desc'>Implementing frontend and backend functionality using technologies like HTML, CSS, JavaScript, and various backend frameworks.</p>
         <p>Creating and maintaining websites, web applications, and web services.</p>
-        <a href="#web-development">Learn more</a>
+        {/* <a href="#web-development">Learn more</a> */}
       </div>
 
     
@@ -154,14 +154,14 @@ function App() {
       <i class="fa-brands fa-app-store"></i>
         <h2 className='service-title'>Mobile App Development</h2>
         <p>Building mobile applications for iOS, Android, or cross-platform using frameworks like React Native or Flutter.</p>
-        <a href="#mobile-app-development">Learn more</a>
+        {/* <a href="#mobile-app-development">Learn more</a> */}
       </div>
       
       <div className="service-item">
       <i class="fa-solid fa-database"></i>
         <h2 className='service-title'>Database Design and Management</h2>
         <p>Designing database structures and <br/> ensuring efficient data storage and retrieval.</p>
-        <a href="#database-design">Learn more</a>
+        {/* <a href="#database-design">Learn more</a> */}
       </div>
       
       <div className="service-item">
@@ -169,7 +169,7 @@ function App() {
         <h2 className='service-title'>Maintenance and Support</h2>
         <p className='service-desc'>Debugging and fixing issues that arise after deployment.</p>
         <p>Providing ongoing support and <br/> maintenance for software applications.</p>
-        <a href="#software-development">Learn more</a>
+        {/* <a href="#software-development">Learn more</a> */}
       </div>
 
       <div className="service-item">
@@ -177,7 +177,7 @@ function App() {
         <h2 className='service-title'>System Architecture</h2>
         <p className='service-desc'>Designing the overall structure and architecture of software systems.</p>
         <p>Ensuring scalability, reliability, and maintainability of systems.</p>
-        <a href="#software-development">Learn more</a>
+        {/* <a href="#software-development">Learn more</a> */}
       </div>
     </div>
   </div>
@@ -188,33 +188,13 @@ function App() {
 <div id="projects">
   <div className="container">
     <h1 className="sub-title">Projects</h1>
-
-    <div className='btn-container'>
-      <h3>Collaborative Projects with Fabolous People</h3>
-      <a href="#projects" className='btn-12'>Schmooze</a>
-      <a href="https://github.com/ian-a-frankel/schmooze/tree/Isamar"> <i class="fa-brands fa-github"></i></a>
-      <h6> Ian Frankel<i class="fa-solid fa-person-circle-check"></i> <br/> Khrystyna Klapushchak<i class="fa-solid fa-person-circle-check"></i> <br/> Patnaree Johnson <i class="fa-solid fa-person-circle-check"></i></h6>
-
-
-      <a href="#projects" className='btn-12'>Road Rage</a>
-      <a href="https://github.com/Shokuninja/road-rage"> <i class="fa-brands fa-github"></i></a>
-      <h6> Tom Marku <i class="fa-solid fa-person-circle-check"></i><br/> Lohan Myles <i class="fa-solid fa-person-circle-check"></i></h6>
-          
-      
-      <a href="#projects" className='btn-12'>Crystal Harmony</a>
-      <a href="https://github.com/KhrystynaKla/Crystal-Harmony-Project"> <i class="fa-brands fa-github"></i></a>
-      <h6> Khrystyna Klapushchak <i class="fa-solid fa-person-circle-check"></i> <br/> Patnaree Johnson <i class="fa-solid fa-person-circle-check"></i></h6>
-      
-    </div>
-
-
     <div className="project-list">  
-    {/* above is under work-list */}
+
       <div className="project-item">
-        {/* above is under work */}
+  
         <img className='project-img' src='holistic.gif' alt="holistic"/>
         <div className='project-info'>
-          {/* this above is under layer */}
+      
         <h3>Holistic Wellness Bot (AI)</h3>
         <p>Focuses on promoting a holistic approach to well-being</p>
         
@@ -298,12 +278,9 @@ function App() {
 
   <a href="https://www.linkedin.com/in/queenice90/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>
   <a href="https://github.com/QueenIce90" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
-  <a href="https://twitter.com/queenice90" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-twitter"></i></a>
-  <a href="https://www.instagram.com/queenice90/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></a>
-  <a href="https://www.facebook.com/queenice90" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook"></i></a>
 </div>
 <div>
-  <a href="/seresume4.pdf" download className="btn btn2">
+  <a href="/Resume.pdf" download className="btn btn2">
   Download CV
 </a>
 </div>
