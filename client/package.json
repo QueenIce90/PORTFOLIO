@@ -1,7 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "https://github.com/QueenIce90/Portfolio/tree/main",
-  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
